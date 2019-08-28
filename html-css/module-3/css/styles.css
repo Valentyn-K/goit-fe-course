@@ -1,45 +1,42 @@
-
-.page-nav {
-    width: 900px;
-    margin: 0 ;
+body{
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 0;
 }
 
-.main-content {
+.container{
     width: 900px;
     margin: 0 auto;
-} */
+}
+
+.page-nav{
+    text-align: center;
+}
 
 .site-navigation{
-    text-decoration: none;
-    font-family: PlayfairDisplay;
-    padding: 0;
     margin: 0;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    padding-inline-start: 0;
+    padding: 0;
+    font-size: 0;
 }
 
-.site-navigation-item a{
-    color: #626262;
-    text-decoration: none;
-    text-transform: uppercase;
-
-}
-
-.site-navigation-item{
+.site-navigation-item {
     display: inline-block;
     text-align: center;
+    list-style-type: none;
+    font-size: 14px;
     margin-right: 100px;
     padding-top: 70px;
     padding-bottom: 100px;
-    }
+}
+
+ a{
+    color: #626262;
+    text-decoration: none;
+    text-transform: uppercase;
+}
 
 .site-navigation-item:nth-last-child(-n+1) {
     margin-right: 0;
-}
-
-.site-navigation-item:nth-child(1) {
-    padding-left: 200px;
 }
 
 .site-navigation-item a:hover{
@@ -49,30 +46,35 @@
 .site-navigation-title{
     color: #b4ad9e;
     font-family: Ubuntu, "sans-serif";
+    font-size: 14px;
+    width: 420px;
+    margin: 0px 0px 22px 0px;
+    /* margin-bottom: 22px; */
+    padding-top: 26px;
+}
+
+.article-title {
+    font-size: 30px;
+    width: 420px;
+    margin: 0px 0px 36px 0px;
+    /* margin-bottom: 36px; */
 
 }
 
-.article-text,
-.site-navigation-title,
-.article-title{
+.article-text {
+    font-size: 14px;
     width: 420px;
+    margin: 0;
+    padding-bottom: 132px;
+}
+
+.article-text:nth-last-child(-n+2){
+    padding-bottom: 54px;
 }
 
 img{
     max-width: 100%;
     height: auto;
-}
-.main-content{
-    font-size: 0;
-}
-
-.site-navigation-title,
-.article-text {
-    font-size: 14px;
-}
-
-.article-title {
-    font-size: 30px;;
 }
 
 .different-articles{
@@ -84,10 +86,9 @@ img{
 }
 
 .load-more{
-    border-block-color: #282828;
+    display: block;
     padding: 20px 30px;
-    margin-left: 356px;
-    margin-top: 46px;
+    margin: 0 auto;
 }
 
 .visually-hidden:not(:focus):not(:active), 
