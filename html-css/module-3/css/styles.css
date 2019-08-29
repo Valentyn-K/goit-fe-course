@@ -30,6 +30,7 @@ body{
 }
 
  a{
+    display: block;
     color: #626262;
     text-decoration: none;
     text-transform: uppercase;
@@ -65,7 +66,7 @@ body{
     font-size: 14px;
     width: 420px;
     margin: 0;
-    padding-bottom: 132px;
+    /* padding-bottom: 132px; */
 }
 
 .article-text:nth-last-child(-n+2){
@@ -79,16 +80,24 @@ img{
 
 .different-articles{
     display: inline-block;
+    margin-bottom: 132px;
 }
 
 .different-articles:nth-child(odd){
     margin-right:60px;
 }
 
+.different-articles:nth-last-of-type(-n+2) {
+    margin-bottom: 36px;
+}
+
 .load-more{
     display: block;
     padding: 20px 30px;
     margin: 0 auto;
+    font-size: 20px;
+    background-color: white;
+    border-block-color: solid black; 
 }
 
 .visually-hidden:not(:focus):not(:active), 
