@@ -2,22 +2,13 @@
 .container{
     width: 1110px;
     margin: 0 auto;
-    /* padding: 30px; */
-    /* background-color: #ffe600;
-    border: 2px solid red; */
 }
-
-/* .site-navigation{
-    width: 900px;
-    background-color: #fff;
-    border: 2px solid black;
-    padding: 30px;
-} */
 
 a {
     display: block;
     text-decoration: none;
 }
+
 img, span{
     display: block;
 }
@@ -39,23 +30,32 @@ img, span{
     color: #1abc9c;
 }
 
-.site-navigation-item{
+.site-navigation-list{
     float: right;
-    font-size: 10px;
+}
+
+.site-navigation-item{
+    float: left;
+    
+}
+
+.site-navigation-item:last-child{
+    margin-right: 0;
+}
+
+.site-navigation-link{
+    display: block;
+    font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
     font-family: "Roboto", sans-serif;
     color: #282828;
-    margin-left: 34px;
+    margin-right: 34px;
     line-height:35px;
     vertical-align: middle;
 }
 
-.site-navigation-item:last-child{
-    margin-left: 0;
-}
-
-.site-navigation-item:hover{
+.site-navigation-link:hover{
     color: #1abc9c;
 }
 
@@ -66,7 +66,11 @@ img, span{
     font-family: "Roboto", sans-serif;
     color: #282828;
     text-align: center;
-    margin-top: 100px;
+    padding-top: 100px;
+    /* padding-bottom: 26px; */
+    margin-bottom: 90px;
+    line-height: 100px;
+
 }
 
 .section-name::after{
@@ -75,7 +79,7 @@ img, span{
     width: 160px;
     height: 6px;
     background-color: #1abc9c;
-    margin: 26px auto 90px;
+    margin: 0 auto;
 }
 
 .product-item{
@@ -149,6 +153,8 @@ img, span{
     width: 350px;
     height: 262px;
     object-fit: cover;
+    margin-bottom:12px;
+    ;
 }
 
 .article-tittle{
@@ -156,8 +162,9 @@ img, span{
     font-weight: 600;
     font-family: "Open sans", sans-serif;
     color: #555252;
-    margin-top: 12px;
-    line-height: 26px;
+    line-height: 28px;
+    margin-bottom: 28px;
+
 }
 
 .article-tittle::after{
@@ -167,7 +174,6 @@ img, span{
     height: 3px;
     background-color: #1abc9c;
     margin-top: 12px;
-    margin-bottom: 28px;
 }
 
 .article-text{
@@ -180,16 +186,18 @@ img, span{
 }
 
 .article-button{
+    display: block;
     font-size: 14px;
     font-weight: 400;
+    line-height: 50px;
     font-family: "Open sans", sans-serif;
     color: #fff;
-    display: block;
     width: 150px;
     height: 50px;
     background-color: #4ec6ab;
     border:none;
     border-radius: 3px;
+    text-align: center;
 }
 
 .article-button:hover{
