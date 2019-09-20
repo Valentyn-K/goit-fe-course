@@ -1,5 +1,5 @@
 .container{
-    width: 1600px;
+    width: 1110px;
     margin: 0 auto;
 }
 
@@ -24,12 +24,14 @@ img, span{
     text-transform: uppercase;
     font-family: "Roboto", sans-serif;
     color: #282828;
-    position: absolute;
+    line-height: 90px;
+    /* position: absolute;
     top: 50%;
     left: 245px;
-    transform: translateY(-50%)
+    transform: translateY(-50%) */
     /* padding-left: 245px;
     line-height: 90px; */
+   
 }
 
 .logo::first-letter{
@@ -41,14 +43,16 @@ img, span{
 
 .site-navigation-list{
     float: right;
-    position: absolute;
+    line-height: 90px;
+    /* position: absolute;
     top: 50%;
     right: 245px;
-    transform: translateY(-50%)
+    transform: translateY(-50%) */
 }
 
 .site-navigation-item{
     float: left;
+    margin-right: 34px;
 }
 
 .site-navigation-item:last-child{
@@ -62,20 +66,28 @@ img, span{
     text-transform: uppercase;
     font-family: "Roboto", sans-serif;
     color: #282828;
-    margin-right: 34px;
-   
 }
 
 .site-navigation-link:hover{
     color: #1abc9c;
 }
 
-.slider{
-    position: relative;
+.advertising-section{
+    background-image: url(../img/slide4.png);
+    background-repeat: no-repeat;
     width: 1600px;
     height: 600px;
+    object-fit: contain;
     margin: 0 auto;
-    background-color: teal;
+    position: relative;
+}
+
+.slider{
+    position: relative;
+    width: 1110px;
+    height: 600px;
+    margin: 0 auto;
+    z-index: 2;
 }
 
 .button-previous,
@@ -89,7 +101,7 @@ img, span{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 3;
+    z-index: 2;
 }
 
 .button-previous:hover,
@@ -104,33 +116,30 @@ img, span{
 
 .button-previous{
     background-image: url(../img/arrow-left.png);
-    left: 245px;
+    left: 0;
 }
 
 .button-next{
     background-image: url(../img/arrow-right.png);
-    right: 245px;
+    right: 0;
 }
 
-.slides-item{
-    position: relative;
-}
-
-.slides-image{
-    height: 600px;
-    width: 100%;
-    object-fit: cover;
-}
-
-.discribtion-box{
-    display: inline-block;
-    width: 730px;
+.slides{
     position: absolute;
     top:50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 3;
+    
+}
 
+.discribtion-box{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    width: 730px;
 }
 
 .slides-title,
@@ -175,10 +184,15 @@ img, span{
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.7);
-    z-index: 2;
+    z-index: 1;
 }
-.slider:hover .blackout-advertising-section{
-    display: none;
+
+.new-collection{
+    /* margin-bottom: 98px; */
+    padding-bottom: 98px;
+    background-color: #e9f0fd;
+    background-size:cover;
+
 }
 
 .section-name{
@@ -202,31 +216,21 @@ img, span{
     margin: 0 auto;
 }
 
-.products-list{
-    /* float: right; */
-    position: relative;
-}
-
-.product-list{
-    position: absolute;
-    left:50%;
-    transform: translateX(-50%);
-      
-    /* float: left;
-    margin-right: 30px; */
-}
-
 .product-item{
-    display: inline-block;
+    height: 280px;
+    width: 255px;
+    margin-right: 30px;
+    float: left;
 }
 
-.product-item:last-of-type{
+.product-item:last-child{
     margin-right: 0;
 }
 
 .product-item-box{
     height: 280px;
     width: 255px;
+    float: left;
     position: relative;
 }
 
@@ -289,8 +293,9 @@ img, span{
     display:block;
 }
 
-.icon span{
-    color:transparent;
+.icon>span{
+    color: transparent;
+    background-color: transparent;
 }
 
 .top-row{
@@ -299,7 +304,7 @@ img, span{
 
 .bottom-row{
     position: relative;
-}
+} 
 
 .both-row-container{
     position: absolute;
@@ -316,6 +321,7 @@ img, span{
     border: 1px solid #ffffff;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: transparent;
     float: left;
     margin-bottom: 8px;
 }
@@ -363,7 +369,6 @@ img, span{
 .footer{
     height: 90px;
     background-color: #323232;
-    margin-top: 98px;
     text-align: center;
     line-height: 90px;
     font-size: 16px;
@@ -371,9 +376,6 @@ img, span{
     text-transform: uppercase;
     font-family: "Open Sans", sans-serif;
     color: #ffffff;
-    
-
-
 }
 
 .clearfix::after {
