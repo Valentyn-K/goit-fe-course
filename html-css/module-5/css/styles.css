@@ -25,13 +25,6 @@ img, span{
     font-family: "Roboto", sans-serif;
     color: #282828;
     line-height: 90px;
-    /* position: absolute;
-    top: 50%;
-    left: 245px;
-    transform: translateY(-50%) */
-    /* padding-left: 245px;
-    line-height: 90px; */
-   
 }
 
 .logo::first-letter{
@@ -44,10 +37,6 @@ img, span{
 .site-navigation-list{
     float: right;
     line-height: 90px;
-    /* position: absolute;
-    top: 50%;
-    right: 245px;
-    transform: translateY(-50%) */
 }
 
 .site-navigation-item{
@@ -188,11 +177,9 @@ img, span{
 }
 
 .new-collection{
-    /* margin-bottom: 98px; */
     padding-bottom: 98px;
     background-color: #e9f0fd;
     background-size:cover;
-
 }
 
 .section-name{
