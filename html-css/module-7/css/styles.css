@@ -7,7 +7,6 @@
     display: flex;
     justify-content: space-between;
     padding-top: 50px;
-    /* padding-bottom: 50px; */
     align-items: center;
 }
 
@@ -39,11 +38,21 @@
     font-display: fallback;
 }
 
-.menu-list{
+.menu-link{
+    text-decoration: none;
+    color:#222222;
     font-family: "Montserrant";
     font-size: 14px;
     font-weight: 400;
+    text-transform: uppercase;
+}
 
+.menu-item:hover .menu-link{
+    color:#fed136;
+}
+
+.services-container{
+    padding: 0 0 114px 0;
 }
 
 .main-title{
@@ -143,21 +152,18 @@ main{
     padding-bottom: 100px;
 }
 
-footer{
+.contact-us{
+    width: 1400px;
+    margin: 0 auto;
+    padding: 110px 0 114px 0;
     background-color: #222222;
     background-image: url(../img/map.png);
     background-repeat: no-repeat;
     background-size: auto;
-    background-position: 2380px 130px;
-    
+    background-position: 900px 130px;
 }
 
-.footer-container{
-    background-position: 700px 0;
-    padding: 110px 0 114px 0;
-}
-
-.footer-title{
+.form-title{
     text-align: center;
     font-family: "Montserrant";
     font-weight: 700;
@@ -177,6 +183,8 @@ footer{
 }
 
 .container-for-form{
+    width: 940px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     height: 200px;
@@ -217,11 +225,9 @@ footer{
     font-size: 14px;
     color: #bbbbbb;
     text-transform: uppercase;
-
 }
 
 .button{
-    /* text-align: center; */
     width: 240px;
     height: 66px;
     background-color: #fed136;
@@ -235,19 +241,23 @@ footer{
     margin: 0 auto;
 }
 
+.button:hover {
+    color: #000000;
+}
+
 .messsage-form{
     text-align: center;
 }
 
 .name:required:valid,
 .e-mail:required:valid,
-.message-text{
+.message-text:valid{
     outline: 2px solid green;
 }
 
 .name:required:invalid,
 .e-mail:required:invalid,
-.message-text{
+.message-text:invalid{
     outline:2px solid red;
 }
 
