@@ -5,6 +5,10 @@
     list-style-type: none;
 }
 
+a{
+    display: block;
+}
+
 .main-background{
     background-image: url(../img/layer-1.png);
     background-size: cover;
@@ -43,7 +47,7 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding-top: 30px;
-    padding-bottom: 170px;
+    margin-bottom: 170px;
 }
 
 .menu{
@@ -54,10 +58,10 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 50%;
-    height: 40px;
+    /* height: 40px; */
 }
 
-.menu-item-link{
+.menu__link{
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     line-height: 40px;
@@ -67,7 +71,7 @@
     padding-bottom: 20px;
 }
 
-.menu-item-link::after{
+.menu__link::after{
     content: "";
     width: auto;
     height: 4px;
@@ -75,19 +79,19 @@
     display: none;
 }
 
-.menu-item:hover>.menu-item-link::after{
+.menu__item:hover>.menu__link::after{
     display: block;
 }
 
-.menu-item:hover>.menu-item-link{
+.menu__link:hover{
     color:#fce38a;  
 }
 
-.menu-item-link-icon{
+.menu__icon{
     fill: #ffffff;
 }
 
-.menu-item-link:hover>.menu-item-link-icon{
+.menu__link:hover>.menu__icon{
     fill: #fce38a;
 }
 
@@ -98,24 +102,28 @@
 }
 
 .title{
-    font-family: 'Kaushan Script', cursive;
-    text-align: center;
-}
-
-.subtitle{
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
     text-align: center;
     padding-bottom: 30px;
 }
 
+.first-row{
+    font-family: 'Kaushan Script', cursive;
+}
+
+.second-row{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
 .title-to-greeting-section{
+    font-family: 'Kaushan Script', cursive;
     font-size: 72px;
     font-weight: 400;
     color:#ffffff;
 }
 
 .subtitle-to-greeting-section{
+    font-family: 'Montserrat', sans-serif;
     font-size: 72px;
     font-weight: 700;
     color:#ffffff;
@@ -144,7 +152,7 @@
     padding: 46px 0 46px;
 }
 
-.container-for-titles::after{
+.title-container::after{
     content: "";
     display: block;
     margin: 0 auto;
@@ -165,7 +173,7 @@
     padding-top: 60px;
 }
 
-.services-list-items{
+.services__items{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -182,11 +190,11 @@
     margin-bottom: 100px;
 }
 
-.services-list-items:nth-last-child(-n+3){
+.services__items:nth-last-child(-n+3){
     margin-bottom: 0;
 }
 
-.services-list-items-container{
+.services__items-container{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -197,13 +205,13 @@
     padding-left: 30px;
 }
 
-.services-list-items-link{
+.services__items-name{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 14px;
 }
 
-.services-list-items-description,
+.services__items-description,
 .about-section-team{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -324,40 +332,40 @@
     z-index: 2;
 }
 
-.socials-facebook,
-.socials-twitter,
-.socials-pinterest,
-.socials-instagram{
+.socials--facebook,
+.socials--twitter,
+.socials--pinterest,
+.socials--instagram{
     width: 56px;
     height: 56px;
     background-color: #fce38a;
     opacity: 0;
 }
 
-.socials-icon{
+.socials__icon{
     -webkit-transform: translate(50%, 50%);
         -ms-transform: translate(50%, 50%);
             transform: translate(50%, 50%);
     fill: #f38181;
 }
 
-.socials-facebook,
-.socials-twitter,
-.socials-pinterest{
+.socials--facebook,
+.socials--twitter,
+.socials--pinterest{
     margin-right: 1px;
 }
 
-.socials-facebook:hover,
-.socials-twitter:hover,
-.socials-pinterest:hover,
-.socials-instagram:hover{
+.socials--facebook:hover,
+.socials--twitter:hover,
+.socials--pinterest:hover,
+.socials--instagram:hover{
     background-color: #f38181;
 }
 
-.socials-facebook:hover .socials-icon,
-.socials-twitter:hover .socials-icon,
-.socials-pinterest:hover .socials-icon,
-.socials-instagram:hover .socials-icon{
+.socials--facebook:hover .socials__icon,
+.socials--twitter:hover .socials__icon,
+.socials--pinterest:hover .socials__icon,
+.socials--instagram:hover .socials__icon{
     opacity: 1;
     fill: #ffffff;
 }
@@ -374,7 +382,7 @@
     transition: transform 0.2s linear, -webkit-transform 0.2s linear;
 }
 
-.image-container:hover .socials-hover-opasity-1{
+.image-container:hover .socials--hover-opasity-1{
     opacity: 1;
 }
 
@@ -451,7 +459,7 @@
     padding: 46px 0 80px;
 }
 
-footer{
+.copyright-input{
     border-top: solid 1px #999999;
 }
 
