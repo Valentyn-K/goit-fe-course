@@ -76,11 +76,12 @@ a{
     width: auto;
     height: 4px;
     background-color: #fce38a;
-    display: none;
+    display: block;
+    opacity: 0;
 }
 
-.menu__item:hover>.menu__link::after{
-    display: block;
+.menu__link:hover::after{
+    opacity: 1;
 }
 
 .menu__link:hover{
@@ -224,7 +225,7 @@ a{
     padding: 46px 0 90px;
 }
 
-.team-list{
+.team__list{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -238,21 +239,21 @@ a{
     height: 470px;
 }
 
-.matthew-dix{
+.team__member--matthew-dix{
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: 20% 0;
        object-position: 20% 0;
 }
 
-.christopher-campbell{
+.team__member--christopher-campbell{
     -o-object-fit: none;
        object-fit: none;
     -o-object-position:  55% 100%;
        object-position:  55% 100%;
 }
 
-.michael-fertig{
+.team__member--michael-fertig{
     -o-object-fit: none;
        object-fit: none;
     -o-object-position:  50% 0;
@@ -278,7 +279,7 @@ a{
     z-index: 2;
 }
 
-.team-list{
+.team__list{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -292,21 +293,21 @@ a{
     height: 470px;
 }
 
-.matthew-dix{
+.team__member--matthew-dix{
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: 20% 0;
        object-position: 20% 0;
 }
 
-.christopher-campbell{
+.team__member--christopher-campbell{
     -o-object-fit: none;
        object-fit: none;
     -o-object-position:  55% 100%;
        object-position:  55% 100%;
 }
 
-.michael-fertig{
+.team__member--michael-fertig{
     -o-object-fit: none;
        object-fit: none;
     -o-object-position:  50% 0;
@@ -438,7 +439,7 @@ a{
             transform: translate(10px, 10px);
 }
 
-.team-member-name{
+.team__member--name{
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -446,7 +447,7 @@ a{
     padding: 25px 0 8px;
 }
 
-.team-member-position{
+.team__member--position{
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -499,7 +500,7 @@ a{
     height: 38px
 }
 
-.text-input{
+.input--text{
     width: 60%;
     height: 38px;
     border-top: solid 1px #999999;
@@ -512,7 +513,7 @@ a{
     color:#cccccc;
 }
 
-.button-input{
+.input--button{
     width: 30%;
     height: 38px;
     border: solid 1px #95e1d3;
@@ -524,7 +525,7 @@ a{
     color:#ffffff;
 }
 
-.button-input:hover{
+.input--button:hover{
     -webkit-transition: background-color 0.2s linear;
     -o-transition: background-color 0.2s linear;
     transition: background-color 0.2s linear;
@@ -536,17 +537,17 @@ a{
         background-image: url(../img/layer-1@2x.png);
     }
     
-    /* .matthew-dix{
+    /* .team__member--matthew-dix{
         object-fit: cover;
         object-position: 20% 0;
     }
     
-    .christopher-campbell{
+    .team__member--christopher-campbell{
         object-fit: contain;
         object-position:  55% 100%;
     }
     
-    .michael-fertig{
+    .team__member--michael-fertig{
         object-fit: contain;
         object-position:  50% 0;
     } */
