@@ -12,26 +12,28 @@
     <header>
         <div class="container">    
             <nav class="site-navigation">
-                <a class="logo" href="#">Golden</a>
-                <ul class="menu-list">
-                    <li class="menu-item">
-                        <a class="menu-link" href="#">Home</a>
+                <a class="logo" href="#">
+                    <img src="./img/Logo-Treehouse.png" alt="Logo-Golden">
+                </a>
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Home</a>
                     </li>
                     
-                    <li class="menu-item">
-                        <a class="menu-link" href="#">Services</a>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Services</a>
                     </li>
                     
-                    <li class="menu-item">
-                        <a class="menu-link" href="#">Portfolio</a>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Portfolio</a>
                     </li>
                     
-                    <li class="menu-item">
-                        <a class="menu-link" href="#">About</a>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">About</a>
                     </li>
                     
-                    <li class="menu-item">
-                        <a class="menu-link" href="#">Contact</a>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -39,12 +41,12 @@
     </header>
 
     <main>
-        <section class="container services-container">
-            <h2 class="main-title">Services</h2>
-            <p class="shortly-about-main">Lorem ipsum dolor sit amet sit amet.</p>
-            <div class="wrap-for-flex">
+        <section class="container services-section">
+            <h2 class="services-section__title">Services</h2>
+            <p class="services-section__about">Lorem ipsum dolor sit amet sit amet.</p>
+            <div class="flex-wrap">
                 <section class="services e-commerce">
-                    <h3 class="main-subtitle">E-Commerce</h3>
+                    <h3 class="main-subtitle">e-commerce</h3>
                     <p class="shortly-about-services">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias atque iusto fugiat ipsam autem maxime.</p>
                 </section>
                 <section class="services responsive-web">
@@ -59,26 +61,26 @@
         </section>
 
         <section class="contact-us">
-            <h2 class="form-title">Contact Us</h2>
-            <p class="about-form">Lorem ipsum dolor ipsum dolor sit amet.</p>
-            <form class="messsage-form" action="#">
-                <div class="container-for-form">
-                    <div class="first-column-container">
-                        <input class="first-column name" type="text" placeholder="Your name*" required name="user-name">
-                        <input class="first-column e-mail" type="email" name="user-email" id="" placeholder="Your e-mail*" required>
-                        <input class="first-column subject" type="text" placeholder="Subject" name="message-subject" id="">
-                    </div>    
+            <div class="container">
+                <h2 class="form-title">Contact Us</h2>
+                <p class="about-form">Lorem ipsum dolor ipsum dolor sit amet.</p>
+                <form class="messsage-form" action="#">
+                    <div class="container-for-form">
+                        <div class="first-column-container">
+                            <input class="first-column name" type="text" placeholder="Your name*" required name="user-name">
+                            <input class="first-column e-mail" type="email" name="user-email" id="" placeholder="Your e-mail*" required>
+                            <input class="first-column subject" type="text" placeholder="Subject" name="message-subject" id="">
+                        </div>    
 
-                    <div class="second-column-container">
-                        <textarea class="second-column message-text" name="message-text" id="" cols="30" rows="10" placeholder="Your message*" required></textarea>
-                    </div>    
-                </div>   
-                <input class="button" type="button" value="Send message">
-            
-            </form>
-
+                        <div class="second-column-container">
+                            <textarea class="second-column message-text" name="message-text" id="" cols="30" rows="10" placeholder="Your message*" required></textarea>
+                        </div>    
+                    </div>   
+                    <input class="button" type="submit" value="Send message">
+                
+                </form>
+            </div> 
         </section>
-
     </main>
 
     <footer>
