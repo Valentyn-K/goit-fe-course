@@ -107,23 +107,23 @@ a{
     padding-bottom: 30px;
 }
 
-.first-row{
+.title--first-row{
     font-family: 'Kaushan Script', cursive;
 }
 
-.second-row{
+.title--second-row{
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
 }
 
-.title-to-greeting-section{
+.greeting-section__title{
     font-family: 'Kaushan Script', cursive;
     font-size: 72px;
     font-weight: 400;
     color:#ffffff;
 }
 
-.subtitle-to-greeting-section{
+.greeting-section__subtitle{
     font-family: 'Montserrat', sans-serif;
     font-size: 72px;
     font-weight: 700;
@@ -131,7 +131,7 @@ a{
     padding-bottom: 120px;
 }
 
-.greeting-section-button{
+.greeting-section__button{
     width: 160px;
     height: 30px;
     background-color: transparent;
@@ -153,7 +153,8 @@ a{
     padding: 46px 0 46px;
 }
 
-.title-container::after{
+.services__title-container::after,
+.team__title-container::after{
     content: "";
     display: block;
     margin: 0 auto;
